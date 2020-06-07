@@ -22,6 +22,7 @@
     .myCarouselheight{
       height: 300px;
     }
+
     #itemimg{
       width: 100%;
       height: 300px;
@@ -57,6 +58,7 @@
       font-size: 15px;
       font-weight: bold;
     }
+    
     #myNavbar li{
       padding-bottom: 10px;
       padding-top: 10px;
@@ -64,22 +66,25 @@
     #myNavbar a:hover{
       font-size: 30px;
     }
+
     #基本資料 table{
       text-align: center;
       font-size: 15px;
       margin: auto;
       font-weight: bold;
       border: black;
-        
     }
     
     #基本資料 td{
       padding-top: 20px;
-      border: 1px solid black;
+      border: 1px solid black;     
     }
 
     #基本資料 tbody{
       padding: 10px;
+    }
+    .name{
+    transform: translateY(10px);
     }
 
     #基本資料 th{
@@ -179,6 +184,7 @@
     .jumbotron h2{
       color: blanchedalmond;
     }
+    
 /*js*/
     .item .txt{  
       position: absolute;
@@ -290,12 +296,14 @@
     }
     #留言板 table{
       border: black;
+      width: 100%;
     }
-    
+
     #留言板 td{
     font-size: 15px;
     font-weight: bold;
     }
+
 
 
     #基本資料 {padding-top:80px;height:auto;color: black;  }
@@ -776,14 +784,14 @@
   
     <h1 class="text-center" >留言板</h1>
     <div>
-      <table class="table table-bordered table-striped ">
+    <center>  <table class="table table-bordered table-striped ">
           <thead>
               <tr>
                   <td style="text-align: center;font-size: 25px;">內容</td>
               </tr>
           </thead>
           <tbody id="tbody"></tbody>
-      </table>
+      </table></center>
   </div>
     <form class="form-horizontal" action='management.php' method='post'>
       <div class="form-group">
@@ -836,9 +844,9 @@
       }
   });
 
-  $(window).resize(function(){ //調整大小自動重整 //方便電腦使用 
+  /*$(window).resize(function(){ //調整大小自動重整 //方便電腦使用 
     location.reload()
-  });
+  });*/
 </script>
 
 <script> /*滑動效果*/

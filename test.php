@@ -23,7 +23,7 @@ if ($result->num_rows > 0) {
         $a = $row["firstname"];
         $b = $row["lastname"];
         $c = $row["reg_date"];
-        $d = [$a,'|','  ',$b,'| ','  ',$c];
+        $d = ["名稱:",$a,'|',"內容:",$b,'| ','  ',"日期",':',$c];
         echo json_encode($d,JSON_UNESCAPED_UNICODE).';';
 
     }
