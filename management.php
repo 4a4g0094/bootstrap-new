@@ -1,6 +1,6 @@
 <?php
 	
-	header("location:index1.html#留言板"); 
+	header("location:index.html#留言板"); 
 	
 	function insert($firstname, $lastname){			
 		$link = @mysqli_connect('localhost', 'root', '', 'meeting1');
