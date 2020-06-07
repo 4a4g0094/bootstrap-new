@@ -36,7 +36,7 @@
     }
 
     .container-fluid{
-      width: 100%;
+      width: 95%;
     }
 
     .affix {
@@ -103,7 +103,7 @@
     }
 
     #求學過程{
-      height: 480px;
+      height: 550px;
       margin-bottom: 20px;
     }
 
@@ -126,12 +126,12 @@
     }
 
     #社團經驗C{
-      height: 300px;
+      height: 350px;
       margin-top: 20px;
     }
 
     #社團經驗3{
-      height: 300px;
+      height: 350px;
     }
 
     #自我期許{
@@ -304,6 +304,10 @@
     #留言板 {padding-top:50px;height:auto;color: black;}
 
 @media screen and (min-width:768px){ 
+
+  .container-fluid{
+      width: 100%;
+    }
 
   .myCarouselheight{
     height: 650px;
@@ -489,7 +493,7 @@
     </div>
 
     <div>
-      <div class="collapse navbar-collapse" id="myNavbar">
+      <div class="collapse navbar-collapse navbarResponsive" id="myNavbar" >
         <ul class="nav navbar-nav">
           <li ><a href="#基本資料" id="me">基本資料</a></li>
           <li><a href="#自傳" id="history">自傳</a></li>
@@ -599,10 +603,10 @@
 
 <div id="自傳"  class=" container-fluid ">
     <h1 style="text-align: center;font-size: 40px; padding: 35px 0px;" >自傳</h1>
-    <div class="col-md-3 col-xs-6 bg" style= "background-image: url(簡介.jpg);  height: 300px; margin-bottom: 20px;">
+    <div class="col-md-4 col-xs-6 bg" style= "background-image: url(簡介.jpg);  height: 350px; margin-bottom: 20px;">
 </div>
     
-    <div class="col-md-9 col-xs-6  bg" style=" background-image: linear-gradient(to bottom right,rgb(211, 211, 95),rgb(117, 230, 117) ); height: 300px; margin-bottom: 20px;">
+    <div class="col-md-8 col-xs-6  bg" style=" background-image: linear-gradient(to bottom right,rgb(211, 211, 95),rgb(117, 230, 117) ); height: 350px; margin-bottom: 20px;">
         <h1 class="text-center">(一)簡介</h1>
         <p class="text-left"> 我是洪晨庭，畢業於南臺科技大學資訊工程系，我是一個很喜歡接觸不同事物以及接受挑戰的人。我的個性比較開放，不論是在課業或是在團隊事務方面，我都不吝說出自己的看法，因為我認為一個團隊就是需要來自大家不同的意見激盪以及接納彼此不同的想法，才能讓團隊更加進步。</p>
     </div>
@@ -804,7 +808,7 @@
 </div>
 
 </body>
-/*<script>//留言板
+<script>//留言板
   $.ajax({
   type: 'GET',
   url: 'test.php',
@@ -824,7 +828,7 @@
       $("#tbody").html(obj);
   }
   });
-</script>*/
+</script>
 <script>
   $('#nav').affix({   //nav手機或電腦的位置
       offset: {
@@ -832,7 +836,7 @@
       }
   });
 
-  $(window).resize(function(){ //調整大小自動重整
+  $(window).resize(function(){ //調整大小自動重整 //方便電腦使用 
     location.reload()
   });
 </script>
@@ -840,22 +844,22 @@
 <script> /*滑動效果*/
 $(function(){
 	$('#me').click(function(){
-		$('html,body').animate({scrollTop:$('#基本資料').offset().top}, 800);
+		$('html,body').animate({scrollTop:$('#基本資料').offset().top}, 1000);
 	}); 
 	$('#1').click(function(){
-		$('html,body').animate({scrollTop:$('#top').offset().top}, 800);
+		$('html,body').animate({scrollTop:$('#top').offset().top}, 1000);
 	});
 	
 	$('#history').click(function(){
-		$('html,body').animate({scrollTop:$('#自傳').offset().top}, 800);
+		$('html,body').animate({scrollTop:$('#自傳').offset().top}, 1000);
 	});
 	
   $('#work').click(function(){
-		$('html,body').animate({scrollTop:$('#作品').offset().top}, 800);
+		$('html,body').animate({scrollTop:$('#作品').offset().top}, 1000);
 	}); 
 	
 	$('#board').click(function(){
-		$('html,body').animate({scrollTop:$('#留言板').offset().top}, 800);
+		$('html,body').animate({scrollTop:$('#留言板').offset().top}, 1000);
 	});
 	
 });
