@@ -74,6 +74,7 @@
       font-weight: bold;
       border: black;
     }
+
     
     #基本資料 td{
       padding-top: 20px;
@@ -302,9 +303,10 @@
     #留言板 td{
     font-size: 15px;
     font-weight: bold;
+    color: black;
+    line-height: 5;
+    text-align: center;
     }
-
-
 
     #基本資料 {padding-top:80px;height:auto;color: black;  }
     #自傳 {padding-top:50px;height:auto;color: black;  }
@@ -827,7 +829,7 @@
       {
         var b = JSON.stringify(a[i]); //將陣列a改成字串
         trStr += '<tr class="example">';
-            var obj = trStr += '<td width="100%">' + JSON.parse(b,[i])+'</td>';
+            var obj = trStr += '<td width="100%">'+'第'+[i+1]+'位留言者:   '+ JSON.parse(b,[i])+'</td>';
             var obj = trStr += '</tr>';  
                 obj= obj.replace(/\"/g, "") //削掉雙引號
                 obj= obj.replace(/,/g, ""); //削掉豆號
