@@ -6,11 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="application/json;charset=UTF-8"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
   <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+  
+  
 </head>
 <style>
    *{
@@ -67,7 +69,7 @@
       font-size: 30px;
     }
 
-    #基本資料 table{
+    #basic table{
       text-align: center;
       font-size: 15px;
       margin: auto;
@@ -76,88 +78,88 @@
     }
 
     
-    #基本資料 td{
+    #basic td{
       padding-top: 20px;
       border: 1px solid black;     
     }
 
-    #基本資料 tbody{
+    #basic tbody{
       padding: 10px;
     }
     .name{
     transform: translateY(10px);
     }
 
-    #基本資料 th{
+    #basic th{
       text-align: center;
     }
 
-    #自傳 h1{
+    #autobiography h1{
       font-size: 20px;
       font-weight: bold;
     }  
 
-    #自傳 p{
+    #autobiography p{
       font-size: 15px;
       margin-top: 5px;
       font-weight: bold;
     }
 
-    #自傳 .bg{
+    #autobiography .bg{
       background-position: center center;
       background-size: cover;
     }
 
-    #求學過程{
-      height: 550px;
+    .process{
+      height: 500px;
       margin-bottom: 20px;
     }
 
-    #社團經驗A{
+    .clubprocessA{
       height: 300px;
       margin-top: 20px;
     }
 
-    #社團經驗{
+    .clubprocess{
       height: 300px;
     }
 
-    #社團經驗B{
+    .clubprocessB{
       height: 300px;
       margin-top: 20px;
     }
 
-    #社團經驗2{
+    .clubprocess2{
       height: 300px;
     }
 
-    #社團經驗C{
+    .clubprocessC{
       height: 350px;
       margin-top: 20px;
     }
 
-    #社團經驗3{
+    .clubprocess3{
       height: 350px;
     }
 
-    #自我期許{
-      height: 450px;
+    .expectation{
+      height: 550px;
       margin-top: 20px;
     }
 
-    #作品 button{
+    #works button{
       font-size: 20px;
       color: black;
       margin-top: 50px;
     }
 
-    #作品 h3{
+    #works h3{
       font-size: 20px;
       font-weight: bold;
       padding: 10px 10px;
     }
 
-    #作品 p{
+    #works p{
       font-size: 15px;
       font-weight: bolder;
       padding: 15px;
@@ -165,14 +167,14 @@
       text-align: left;
     }
    
-    #作品 img{      
+    #works img{      
       height: 400px;
       width: 100%;
       position:relative;
       z-index: -1;
     }
 
-    #作品 h1{
+    #works h1{
       font-size: 20px;
       color: yellow;
       font-weight: bold;
@@ -295,26 +297,31 @@
     .item3:hover h1::after{
       width: 100%;   
     }
-    #留言板 table{
+    #message table{
       border: black;
       width: 100%;
     }
 
-    #留言板 td{
+    #message td{
     font-size: 15px;
     font-weight: bold;
     color: black;
     line-height: 5;
     text-align: center;
     }
+    
+    .processimg{
+      display: none;
+    }
+    #basic {padding-top:80px;height:auto;color: black;  }
+    #autobiography {padding-top:50px;height:auto;color: black;  }
+    #works {padding-top:50px;height:auto;color: black;}
+    #message {padding-top:50px;height:auto;color: black;}
 
-    #基本資料 {padding-top:80px;height:auto;color: black;  }
-    #自傳 {padding-top:50px;height:auto;color: black;  }
-    #作品 {padding-top:50px;height:auto;color: black;}
-    #留言板 {padding-top:50px;height:auto;color: black;}
-
-@media screen and (min-width:768px){ 
-
+@media screen and (min-width:992px){ 
+  .processimg{
+    display: block;
+  }
   .container-fluid{
       width: 100%;
     }
@@ -338,66 +345,66 @@
     font-size: 20px;
   }
 
-  #基本資料 table{
+  #basic table{
     font-size: 30px;
     
   }
 
- #自傳 p{
+ #autobiography p{
     font-size: 20px;
     line-height: 1.5;
     
   }
 
-  #自傳 h1{
+  #autobiography h1{
     font-size: 30px;
     text-align: center;
     padding-bottom: 10px;
   }
-  #求學過程{
-    height: 300px;
+  .process{
+    height: 500px;
     margin-bottom: 20px;
     
   }
 
-  #社團經驗A{
+  .clubprocessA{
     height: 700px;
     
   }
 
-  #社團經驗{
+  .clubprocess{
     height: 350px;
   }
 
-  #社團經驗B{
+  .clubprocessB{
     height: 700px;
 
   }
 
-  #社團經驗2{
+  .clubprocess2{
     height: 350px;
   }
 
-  #社團經驗C{
+  .clubprocessC{
     height: 700px;
   }
 
-  #社團經驗3{
+  .clubprocess3{
     height: 350px;
   }
 
-  #自我期許{
+  .expectation{
     height: 300px;
     margin-top: 20px;
   }
 
-  #作品 h1{
+  #works h1{
     font-size: 30px;
     color: yellow;
     font-weight: bold;
   }
 
-  #作品 p{
+  #works p{
     font-size: 20px;
     font-weight: bolder;
     padding: 15px;
@@ -405,10 +412,10 @@
     text-align: left;
   }
 
-  #作品 img{      
+  #works img{      
     height: 450px;
   }
-  #作品 h3{
+  #works h3{
     font-size: 30px;
   }
 
@@ -427,7 +434,7 @@
     width: 97.8%;
   }
 
-  #留言板 td{
+  #message td{
     font-size: 25px;
     font-weight: bold;
     text-align: left;
@@ -505,137 +512,138 @@
     <div>
       <div class="collapse navbar-collapse navbarResponsive" id="myNavbar" >
         <ul class="nav navbar-nav">
-          <li ><a href="#基本資料" id="me">基本資料</a></li>
-          <li><a href="#自傳" id="history">自傳</a></li>
-          <li><a href="#作品" id="work">作品</a></li>
-          <li><a href="#留言板" id="board">留言板</a></li>
+          <li ><a href="#basic" id="me">基本資料</a></li>
+          <li><a href="#autobiography" id="history">自傳</a></li>
+          <li><a href="#works" id="work">作品</a></li>
+          <li><a href="#message" id="board">留言板</a></li>
         </ul>
       </div>
     </div>
   </div>
 </nav>  
-
-<div id="基本資料"  class="container-fluid  ">  
-    <table class="table table-bordered " > 
-        <thead>
-        <tr>
-            <th  colspan="12" style="font-size: 30px;  border: 1px solid black; ">我的個人資料</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td rowspan="2"  ><img src = "01.jpg" style="width: 100%;" ></td>
-            <td colspan="6" class="name" >姓名</td>
-            <td colspan="6" class="name">畢業學校</td>
-        </tr>
-        <tr>
-            <td colspan="6" class="name">洪晨庭</td>
-            <td colspan="6" class="name">南台科技大學</td>
-            
-        </tr>
-        <tr>
-            <td colspan="3">出生日期</td>
-            <td colspan="3">兵役</td>
-            <td colspan="6">E-mail</td>
-        </tr>
-        <tr>
-            <td colspan="3">1997年4月16日</td>
-            <td colspan="3">免役</td>
-            <td colspan="6">4a4g0094@stust.edu.tw</td>
-        </tr>
-        <tr>
-            <td  colspan="3">連絡電話</td>
-            <td colspan="9">通訊地址</td>
-            
-        </tr>
-        <tr>
-            <td colspan="3">0912777194</td>
-            <td colspan="9">高雄市三民區鼎泰街18號4樓 </td>
-        </tr>
-        <tr>
-            <td colspan="12">工作經歷</td>
-        <tr>
-            <td colspan ="12"><ol>
-                    <li>外場工讀／古城豆花庄 2018／07～2019／01</li>
-                    <li>寒暑期工讀生／家樂福 2017／07～2018／01</li>
-                  </ol>  </td>
-        </tr>
-        <tr>
-            <td colspan="3">應徵職務</td>
-            <td colspan="6">最快可上班日</td>
-            <td colspan="3">工作性質</td>
-        </tr>
-        <tr >
-            <td colspan="3">前端工程師 </td>
-            <td colspan="6">錄取後，一週可上班 </td>
-            <td colspan="3">全職工作</td>
-        </tr>
-        <tr>
-            <td colspan ="12">中文</td>
-        </tr>
-        <tr>
-            <td colspan ="3">聽:精通</td>
-            <td colspan ="3">說:精通</td>
-            <td colspan ="3">讀:精通</td>
-            <td colspan ="3">寫:精通</td>
-        </tr>
-        <tr>
-            <td colspan ="12">英文</td>
-        </tr>
-        <tr>
-            <td colspan ="3">聽:略懂</td>
-            <td colspan ="3">說:略通</td>
-            <td colspan ="3">讀:略通</td>
-            <td colspan ="3">寫:略通</td>
-        </tr>
-        <tr>
-         <td colspan ="12">專業技能</td>
-        </tr>
-        <tr>
-          <td colspan ="12">
-        <ul>
-            <li>自學:RWD，Bootstrap，Mysql，Ajax</li>
-            <li>學校所學HTML，CSS，Javascipt，jQuery，PHP</li>
-        </ul> 
-            </td>
-        </tr>
-        <tr>
-          <td colspan ="12">專業證照 </td>
-        </tr>
-        <tr>
-          <td colspan ="4" style="width: 33.3%;">電腦硬體裝修乙級</td>
-          <td colspan ="4" style="width: 33.3%;">電腦硬體裝修丙級</td>
-          <td colspan ="4" style="width: 33.3%;">工業電子丙級</td>
-        </tr> 
-        </tbody>
-    </table>
+<div id="basic"  class="container-fluid  ">  
+  <table class="table table-bordered " > 
+      <thead>
+      <tr>
+          <th  colspan="12" style="font-size: 30px;  border: 1px solid black; ">我的個人資料</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td rowspan="2"  ><img src = "01.jpg" style="width: 100%;" ></td>
+          <td colspan="6" class="name" >姓名</td>
+          <td colspan="6" class="name">畢業學校</td>
+      </tr>
+      <tr>
+          <td colspan="6" class="name">洪晨庭</td>
+          <td colspan="6" class="name">南台科技大學</td>
+          
+      </tr>
+      <tr>
+          <td colspan="3">出生日期</td>
+          <td colspan="3">兵役</td>
+          <td colspan="6">E-mail</td>
+      </tr>
+      <tr>
+          <td colspan="3">1997年4月16日</td>
+          <td colspan="3">免役</td>
+          <td colspan="6">4a4g0094@stust.edu.tw</td>
+      </tr>
+      <tr>
+          <td  colspan="3">連絡電話</td>
+          <td colspan="9">通訊地址</td>
+          
+      </tr>
+      <tr>
+          <td colspan="3">0912777194</td>
+          <td colspan="9">高雄市三民區鼎泰街18號4樓 </td>
+      </tr>
+      <tr>
+          <td colspan="12">工作經歷</td>
+      <tr>
+          <td colspan ="12"><ol>
+                  <li>外場工讀／古城豆花庄 2018／07～2019／01</li>
+                  <li>寒暑期工讀生／家樂福 2017／07～2018／01</li>
+                </ol>  </td>
+      </tr>
+      <tr>
+          <td colspan="3">應徵職務</td>
+          <td colspan="6">最快可上班日</td>
+          <td colspan="3">工作性質</td>
+      </tr>
+      <tr >
+          <td colspan="3">前端工程師 </td>
+          <td colspan="6">錄取後，一週可上班 </td>
+          <td colspan="3">全職工作</td>
+      </tr>
+      <tr>
+          <td colspan ="12">中文</td>
+      </tr>
+      <tr>
+          <td colspan ="3">聽:精通</td>
+          <td colspan ="3">說:精通</td>
+          <td colspan ="3">讀:精通</td>
+          <td colspan ="3">寫:精通</td>
+      </tr>
+      <tr>
+          <td colspan ="12">英文</td>
+      </tr>
+      <tr>
+          <td colspan ="3">聽:略懂</td>
+          <td colspan ="3">說:略通</td>
+          <td colspan ="3">讀:略通</td>
+          <td colspan ="3">寫:略通</td>
+      </tr>
+      <tr>
+       <td colspan ="12">專業技能</td>
+      </tr>
+      <tr>
+        <td colspan ="12">
+      <ul>
+          <li>自學:RWD，Bootstrap，Mysql，Ajax</li>
+          <li>學校所學HTML，CSS，Javascipt，jQuery，PHP</li>
+      </ul> 
+          </td>
+      </tr>
+      <tr>
+        <td colspan ="12">專業證照 </td>
+      </tr>
+      <tr>
+        <td colspan ="4" style="width: 33.3%;">電腦硬體裝修乙級</td>
+        <td colspan ="4" style="width: 33.3%;">電腦硬體裝修丙級</td>
+        <td colspan ="4" style="width: 33.3%;">工業電子丙級</td>
+      </tr> 
+      </tbody>
+  </table>
 </div>
 
-<div id="自傳"  class=" container-fluid ">
+
+<div id="autobiography"  class=" container-fluid " >
     <h1 style="text-align: center;font-size: 40px; padding: 35px 0px;" >自傳</h1>
     <div class="col-md-4 col-xs-6 bg" style= "background-image: url(簡介.jpg);  height: 350px; margin-bottom: 20px;">
 </div>
     
     <div class="col-md-8 col-xs-6  bg" style=" background-image: linear-gradient(to bottom right,rgb(211, 211, 95),rgb(117, 230, 117) ); height: 350px; margin-bottom: 20px;">
-        <h1 class="text-center">(一)簡介</h1>
-        <p class="text-left"> 我是洪晨庭，畢業於南臺科技大學資訊工程系，我是一個很喜歡接觸不同事物以及接受挑戰的人。我的個性比較開放，不論是在課業或是在團隊事務方面，我都不吝說出自己的看法，因為我認為一個團隊就是需要來自大家不同的意見激盪以及接納彼此不同的想法，才能讓團隊更加進步。</p>
+      <h1 class="text-center">(一)簡介</h1>
+      <p class="text-left"> 我是洪晨庭，畢業於南臺科技大學資訊工程系，我是一個很喜歡接觸不同事物以及接受挑戰的人。我的個性比較開放，不論是在課業或是在團隊事務方面，我都不吝說出自己的看法，因為我認為一個團隊就是需要來自大家不同的意見激盪以及接納彼此不同的想法，才能讓團隊更加進步。</p>
+ 
     </div>
 
-    <div class="col-md-8 col-xs-6 " id="求學過程" style="background-image: linear-gradient(to bottom right,rgb(139, 245, 236),rgba(230, 65, 114, 0.842) );">
-        <h1 class="text-center" >(二)求學過程</h1>
-        <p class="text-left"> 高中時期我就讀於資訊科，在這期間接觸到了程式和電路板，我發現我個人對於程式這方面學習充滿熱情，所以在當時就決定往這方面發展，因此高職畢業後，繼續就讀於南臺科技大學資訊工程系。在大一時期學習到了許多的程式，從基本的C語言、Python，到JavaScript和PHP。在這許多的程式語言中，我個人對於網頁特別感興趣，可是網頁這方面相關的東西實在非常多，所以在當時，我常常點開自學網站去學習一些前端的知識。在大四下，我接觸到了PHP，發現原來這個程式可以結合網頁做出許多進階效果。</p>
+    <div class="col-md-8 col-xs-12  process"  style="background-image: linear-gradient(to bottom right,rgb(139, 245, 236),rgba(230, 65, 114, 0.842) );">
+      <h1 class="text-center">(二)求學過程</h1>
+      <p class="text-left"> 高中時期我就讀於資訊科，在這期間接觸到了程式和電路板，我發現我個人對於程式這方面學習充滿熱情，所以在當時就決定往這方面發展，因此高職畢業後，選擇就讀於資訊工程系。在大學時期也學習到了許多的程式，從基本的C語言、Python，到JavaScript和PHP。在這許多的程式語言中，我個人對於網頁特別感興趣，所以在當時，我也常常點開w3scool去學習一些前端的知識，也因此接觸到一些學校沒接觸到的網頁技能，例如CSS和jQuery，並且試著將他們利用在課程中，並且在大四下，我接觸到了PHP，發現原來一個完整網頁是需要PHP來達到前後端的配合。在我畢業之後，也有去針對大部分業界所需要的相關能力去做相關的自主學習，從前端的css框架bootstrap再到RWD，還有後端的mysql，以及能將他們連在一起的Ajax，以及GitHub，這些都是我畢業後利用自己的時間所學習到的技能，並且我也利用這些技能試著做了幾個專案，從基本的網頁切版和adobe軟體的基本應用，再到bootstrap的個人網站，並且也透過這些機會讓自己知道有那些地方需要改進，順便讓自己習慣每當遇到bug就利用Google，去試著將自己所遇到的問題解決，並且我也能從過程得到了許多成就感。</p>
     </div>
 
-    <div class="col-md-4 col-xs-6 text-center bg" id="求學過程" style= "background-image: url(求學.jpg);" >
+    <div class="col-md-4  text-center bg process processimg"  style= "background-image: url(求學.jpg);" >
     </div>
 
  
  
-    <div class="col-md-4 col-xs-12 text-center " id="社團經驗A" >
-      <div class="col-md-12 col-xs-6 text-center bg " id="社團經驗" style= "background-image: url(系拉.jpg);" >
+    <div class="col-md-4 col-xs-12 text-center  clubprocessA"  >
+      <div class="col-md-12 col-xs-6 text-center bg clubprocess"  style= "background-image: url(系拉.jpg);" >
       </div> 
 
-      <div class="col-md-12 col-xs-6 text-center " id="社團經驗"  style="background-image: linear-gradient(to bottom right,rgb(230, 165, 27),rgba(117, 241, 14, 0.842) );">
+      <div class="col-md-12 col-xs-6 text-center clubprocess"   style="background-image: linear-gradient(to bottom right,rgb(230, 165, 27),rgba(117, 241, 14, 0.842) );">
         <h1>
           資訊工程系啦啦隊
         </h1>
@@ -645,53 +653,52 @@
       </div>
     </div>
 
-    <div class="col-md-4 col-xs-12 text-center "  id="社團經驗B" >
-      <div class="col-md-12 col-xs-6 text-center  bg" id="社團經驗2" style= "background-image: url(新生.jpg); " >
+    <div class="col-md-4 col-xs-12 text-center clubprocessB"   >
+      <div class="col-md-12 col-xs-6 text-center  bg clubprocess2"  style= "background-image: url(新生.jpg); " >
       </div>
-      <div class="col-md-12 col-xs-6 text-left  "  id="社團經驗2" style="background-image: linear-gradient(to bottom right,rgb(245, 90, 90),rgba(230, 59, 36, 0.842) );" >
+      <div class="col-md-12 col-xs-6 text-left clubprocess2"  style="background-image: linear-gradient(to bottom right,rgb(245, 90, 90),rgba(230, 59, 36, 0.842) );" >
         <h1>新生輔導員</h1>
           <p>這也是我以前沒有接觸過的事務，我的最主要工作，就是要讓所有的新生，可以在短暫的3天中，快速了解大學這個充滿活力和青春的地方，這也是我第一次真正帶領他人的活動。</p>
       </div> 
     </div>
     
-    <div class="col-md-4 col-xs-12 text-center"  id="社團經驗C" >
-      <div class="col-md-12 col-xs-6 text-center bg  " id="社團經驗3" style="background-image: url(系考.jpg);  " >
+    <div class="col-md-4 col-xs-12 text-center clubprocessC"  >
+      <div class="col-md-12 col-xs-6 text-center bg clubprocess3 "  style="background-image: url(系考.jpg);  " >
       </div> 
-      <div class="col-md-12 col-xs-6 text-left " id="社團經驗3" style="background-image: linear-gradient(to bottom right,rgb(245, 217, 90),rgba(140, 233, 136, 0.842) );">
+      <div class="col-md-12 col-xs-6 text-left clubprocess3"  style="background-image: linear-gradient(to bottom right,rgb(245, 217, 90),rgba(140, 233, 136, 0.842) );">
         <h1>
           六系聯合系烤總召
         </h1>
-        <p class="text-left" style="float: left;">
+        <p class="text-left" >
           這個活動是我在大學系學會的最後一個活動，因為這個活動是需要一次帶領50～60人的活動，並且對象都是來自不同科系的同學，所以我們從原本的互不相識到慢慢磨和，再者由於我擔任的職位是總召，我也體會到原來要當一個決策管理者是一件很多麼不容易的事。
+          </p>
         </p>
       </div>
    
     </div>
  
   
-  <div class="ccontainer-fluid">
+  <div class="container-fluid">
     <div class="col-md-12 col-xs-12 " style="background-image: linear-gradient(to bottom right,rgb(131, 235, 145),rgba(250, 248, 150, 0.842) ); height: 180px; margin-top: 20px;">
-        <p>進入大三後，漸漸地我也將系學會事務交給學弟妹，就在這個時候，我的好 朋友同時也是創業社的社長，邀請我加入創業社，這是一位南臺科大老師所帶領的團隊，這社團最主要的目的就是幫助一些社會人士規劃活動，我也在這裡第一次接觸到幫別人寫JavaScript，雖然這個程式非常容易入門，但是我個人寫完後，還透過了jQuery加入了其他的功能，讓它的功能可以更完善。</p>
-    </div>
-
-    <div class="col-md-3 col-xs-6 text-center bg" id="自我期許" style= "background-image: url(未來.jpg); " >
+      <p>進入大三後，漸漸地我也將系學會事務交給學弟妹，就在這個時候，我的好 朋友同時也是創業社的社長，邀請我加入創業社，這是一位南臺科大老師所帶領的團隊，這社團最主要的目的就是幫助一些社會人士規劃活動，我也在這裡第一次接觸到幫別人寫JavaScript，雖然這個程式非常容易入門，但是我個人寫完後，還透過了jQuery加入了其他的功能，讓它的功能可以更完善。</p>
+  </div>
+  <div class = "container-fluid">
+    <div class="col-md-3 col-xs-6 text-center bg expectation"  style= "background-image: url(未來.jpg); " >
     </div>
     
-    <div class="col-md-9 col-xs-6 " id="自我期許" style="background-image: linear-gradient(to bottom right,rgb(240, 154, 235),rgba(219, 123, 228, 0.842) );  ">
-        <h1 class="text-center">(四)自我期許</h1>
+    <div class="col-md-9 col-xs-6 expectation"  style="background-image: linear-gradient(to bottom right,rgb(240, 154, 235),rgba(219, 123, 228, 0.842) );  ">
+      <h1 class="text-center">(四)自我期許</h1>
         <p class="text-left"> 希望可以將在大學期間所學到各項專業知識，實際滿足並運用於貴公司的需求。目前我也在家中自學其他的網頁相關語言，希望可以更快跟上業界的腳步，因為在資訊科的領域，唯有不斷的學習才能讓自己更加的進步，希望我有機會可以和 貴公司其他的員工一起互相切磋學習。 非常感謝 貴公司願意花寶貴的時間閱讀我的履歷，誠心希望有機會能到貴公司服務，相信以自己的認真態度及精神，必能在工作上有良好的表現，並為公司帶來佳績。</p>
     </div>
   </div>  
-</div>
-
-<div id="作品"  class="container-fluid">
+  <div id="works"  class="container-fluid">
     <div class="jumbotron">
         <div class="container text-center">
           <h2>我的作品集</h2>      
         </div>
       </div>  
       <div class="text-center container-fluid ">    
-        <h3>JavaScript</h3><br>
+        <h3>JavaScript</h3>
         <div class="row">
           <div class="item">
           <div class="col-md-3  " style="margin-bottom: 20px;" >
@@ -699,7 +706,7 @@
               <h1>比大小小遊戲</h1>
               <p>功能說明:輸入0-10的其中一個數字電腦會隨機判斷出要比大還是比小，並且可以透過下面金額去決定你要下注的金額，最後會秀出雙方所猜的數字並顯示遊戲模式最終來判斷勝負。</p>
             </div> 
-            <img src="比大小.jpg" class="img-responsive "  width="100%" alt="Image">
+            <img src="比大小.jpg"   width="100%" alt="Image">
           </div>
         </div>
         <div class="item">
@@ -708,7 +715,7 @@
               <h1>猜數字</h1> 
               <p>功能說明:電腦會隨機產生1個0~5的數字，使用者隨機輸入一個數字，電腦會自行判斷並告知結果。</p>
             </div>
-            <img src="猜數字.jpg" class="img-responsive"  width="100%" alt="Image">
+            <img src="猜數字.jpg"  width="100%" alt="Image">
           </div>
         </div>
           <div class="item">
@@ -717,7 +724,7 @@
               <h1>亂數產生器</h1>
               <p>功能說明:上面按鈕會每秒自動顯示出隨機亂數，使用者每點一次按鈕便會自動跑出5個1到550的不重複數字，並且會顯示在下面並告知每一次的結果。</p>
           </div> 
-            <img src="創業社.jpg" class="img-responsive"  width="100%" alt="Image">
+            <img src="創業社.jpg"   width="100%" alt="Image">
           </div>
         </div>
           <div class="item">
@@ -726,13 +733,13 @@
             <h1>N*N乘法表</h1>  
             <p>功能說明:隨機輸入一個數字N，會以表格的方式跑出N*N的的全部結果</p>
           </div>
-            <img src="N.jpg" class="img-responsive"  width="100%" alt="Image">
+            <img src="N.jpg"   width="100%" alt="Image">
           </div>
         </div>
-      </div><br>
+      </div>
       </div>
       <div class="container-fluid  text-center">    
-        <h3 style="padding-top: 10px;">PHP</h3><br>
+        <h3 style="padding-top: 10px;">PHP</h3>
           <div class="row">  
             <div class="item2">
           <div class="col-md-4" style="margin-bottom: 20px;">
@@ -740,7 +747,7 @@
               <h1>BMI計算</h1>
               <p style="text-align: center;">BMI輸入前</p>
           </div>
-            <img src="BMI.jpg" class="img-responsive"  width="100%" alt="Image">
+            <img src="BMI.jpg"   width="100%" alt="Image">
           </div>
         </div>
         <div class="item2">
@@ -749,7 +756,7 @@
               <h1>BMI計算</h1>
               <p style="text-align: center;">BMI計算CODE</p>
           </div>
-            <img src="BMI3.jpg" class="img-responsive"  width="100%" alt="Image">
+            <img src="BMI3.jpg"   width="100%" alt="Image">
           </div>
         </div>
         <div class="item2">
@@ -758,15 +765,15 @@
               <h1>BMI計算</h1>
               <p style="text-align: center;">BMI輸入後</p>
           </div>
-            <img src="BMI2.jpg"  class="img-responsive"  width="100%"alt="Image">
+            <img src="BMI2.jpg"    width="100%"alt="Image">
           </div>
          </div>
         </div>
-      </div><br>
+      </div>
       
       <div class="container-fluid  text-center">    
         <div class="row">
-          <h3 style="padding-top: 10px;">學校分組作業</h3><br>
+          <h3 style="padding-top: 10px;">學校分組作業</h3>
             <div class="item3">
             <div class="col-md-12">
             <div class="txt ">
@@ -774,15 +781,16 @@
               <p  style="text-align: center;">這是我大學與其他同學一起完成的專案</p>
               <a href="https://4a4g0094.github.io/school/"><button style="width: 200px;height: 50px; ">前往觀看</button></a>
           </div>
-           <img src="灣裡.jpg" class="img-responsive" style="width:100%" alt="Image">
+           <img src="灣裡.jpg"  style="width:100%" alt="Image">
           </div>
         </div>
         </div>
-      </div><br><br>
+      </div>
     </div>
 </div>   
 
-<div id="留言板" class="container-fluid" >
+
+<div id="message" class="container-fluid" >
   
     <h1 class="text-center" >留言板</h1>
     <div>
@@ -816,7 +824,6 @@
     </form>
   
 </div>
-
 </body>
 <script>//留言板
   $.ajax({
@@ -854,22 +861,22 @@
 <script> /*滑動效果*/
 $(function(){
 	$('#me').click(function(){
-		$('html,body').animate({scrollTop:$('#基本資料').offset().top}, 1000);
+		$('html,body').animate({scrollTop:$('#basic').offset().top}, 1000);
 	}); 
 	$('#1').click(function(){
 		$('html,body').animate({scrollTop:$('#top').offset().top}, 1000);
 	});
 	
 	$('#history').click(function(){
-		$('html,body').animate({scrollTop:$('#自傳').offset().top}, 1000);
+		$('html,body').animate({scrollTop:$('#autobiography').offset().top}, 1000);
 	});
 	
   $('#work').click(function(){
-		$('html,body').animate({scrollTop:$('#作品').offset().top}, 1000);
+		$('html,body').animate({scrollTop:$('#works').offset().top}, 1000);
 	}); 
 	
 	$('#board').click(function(){
-		$('html,body').animate({scrollTop:$('#留言板').offset().top}, 1000);
+		$('html,body').animate({scrollTop:$('#message').offset().top}, 1000);
 	});
 	
 });
